@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+    
+        }
+    </style>
+    <style type="text/tailwindcss">
+    
+        .btn{
+                @apply  bg-purple-700 text-white px-6 py-4 rounded-md font-bold shadow-xl hover:-translate-y-2 transition duration-150 ease-out hover:ease-in 
+            }
+                     
+                  </style>
+    <title>Fiber - Signup</title>
+</head>
+<body class="mx-10 md:mr-0">
+    
+
+    <div class="grid md:grid-cols-2 pb-2 space-x-2">
+        <div class="md:mr-32">
+            <section class="">
+                <nav class=" mt-10 sm:flex items-center">
+                    <div class="text-2xl font-bold   flex">
+                        <a href="./index.html" class="hover:cursor-pointer">Fiber</a>
+                        
+                    </div>
+            
+            
+                    <ul class="hidden sm:flex mx-4   space-x-4  ">
+            
+                        <li class="text-lg mt-1">Community</li>
+                        <li class="text-lg mt-1">Pricing</li>
+                        <li class="text-lg mt-1">Features</li>
+            
+                    </ul>
+            
+            
+                    <!-- Mobile Menu -->
+            
+                </nav>
+            </section>
+            <!-- Header -->
+            <header class=" mt-20 font-bold text-4xl">Create your Fiber account</header>
+            <!-- Details -->
+            <div class=" mt-10">
+                <div class="font-semibold">Your Name</div>
+                <input class="my-2 py-1.5 border-2 rounded-sm w-full focus:outline-none" placeholder="  John Doe" type="text"
+                    name="" id="">
+            </div>
+            <div class=" mt-5">
+                <div class="font-semibold">E-mail</div>
+                <input class="my-2 py-1.5 border-2 rounded-sm w-full focus:outline-none" placeholder="  johndoe@gmail.com"
+                    type="email" name="" id="">
+            </div>
+            <div class=" mt-10">
+                <div class="font-semibold">Password</div>
+                <input class="my-2 py-1.5 border-2 rounded-sm w-full focus:outline-none" type="password"
+                    placeholder="  Atleast 8 characters" name="" id="">
+            </div>
+            
+            <!-- Disclaimer -->
+            <div class="mt-10 font-medium">
+                <input class="mx-0.5 flex-row" type="checkbox"> By creating an account on fiber you agree to the <div
+                    class="flex font-bold text-purple-700 active:underline">Terms & Conditions.</div>
+            </div>
+            
+            <button class="btn mt-5 w-full">Create Fiber Account</button>
+            
+            <div class="mt-5 font-medium flex">
+                Already have an account on Fiber?
+                <div class="px-1 text-purple-700 font-bold active:underline">Sign In</div>
+            </div>
+        </div>
+
+        <!-- Left Section -->
+        <div class="hidden md:flex justify -ml-10 bg-purple-700">
+            <div class="flex-col  justify  self-center justify-center ">
+                <img class="px-20 items-center  w-auto" src= "./Fiber Starter Files/Assets/Sign Up Image.png" alt="">
+                <h1 class="mt-5  flex justify-center font-bold text-white text-3xl">Unparalleled Templates</h1>
+                <p class="mx-20 text-center-center mt-4 text-gray-300 ">Crafted by a team of professional designers, our templates are unparalleled in the market.</p>
+            </div>
+        </div>
+    </div>
+
+
+  
+<script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+</body>
+</html>
